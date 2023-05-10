@@ -18,10 +18,14 @@ def home(request):
             login(request, user)
             return redirect('count')
         else:
-            messages.info(request, 'Username or Password is Incorrect')
+            messages.info(request, 'Username or Password is Incorrect!')
             return render(request,'index.html', {})
 
     return render(request,'index.html', {})
+
+def log_out(request):
+    logout(request)
+    return redirect('home')
 
 def sign_up(request):
     form = create_user_form()
@@ -30,7 +34,7 @@ def sign_up(request):
         form = create_user_form(request.POST)
         if form.is_valid():
             form.save()
-    context = {'form': form}
+    context = {'form': form, 'username': username}
     return render(request, 'sign_up.html', context)
 
 def count(request):
