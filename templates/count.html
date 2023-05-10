@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Form Tambah aja</h2>
+
+<form method="POST">
+  {% csrf_token %} 
+  <label for="fname">angka 1:</label><br>
+  <input type="text" name="a"><br>
+  <label for="lname">angka 2:</label><br>
+  <input type="text" name="b"><br><br>
+  <button type="submit" name="add">
+</form> 
+
+<p>Hasil: {{result}}</p>
+</body>
+</html>
