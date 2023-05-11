@@ -28,6 +28,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
+CSRF_TRUSTED_ORIGINS = ['http://0.0.0.0']
+
 
 # Application definition
 
