@@ -1,1 +1,1 @@
-print(43)
+print("TESTING COMMENCED")
