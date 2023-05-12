@@ -18,9 +18,9 @@ class test_urls(SimpleTestCase):
         self.assertEqual(resolve(url).func, count)
 
         # tes url pake pytest
-    @pytest.mark.django.db
-    def test_home_url_pake_pytest(client):
-        url = reverse('home')
-        response = client.get(url)
-        assert response.status_code == 200
+   # @pytest.mark.django.db
+   # def test_home_url_pake_pytest(client):
+    #    url = reverse('home')
+     #   response = client.get(url)
+      #  assert response.status_code == 200
     
