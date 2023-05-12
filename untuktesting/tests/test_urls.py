@@ -1,6 +1,7 @@
 from django.test import SimpleTestCase
 from django.urls import reverse, resolve
 from pages.views import home, count
+import pytest
 
 
 class test_urls(SimpleTestCase):
@@ -15,4 +16,11 @@ class test_urls(SimpleTestCase):
         #assert 1 == 1
         url = reverse('count')
         self.assertEqual(resolve(url).func, count)
-        
+
+        # tes url pake pytest
+    @pytest.mark.django.db
+    def test_home_url_pake_pytest(client):
+        url = reverse('home')
+        response = client.get(url)
+        assert response.status_code == 200
+    
