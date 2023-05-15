@@ -8,4 +8,4 @@ class test_views(TestCase):
         client = Client()
         response = client.get(reverse('home'))
         self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'index.html')
+        self.assertTemplateUsed(response, 'count.html')
