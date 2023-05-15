@@ -7,4 +7,4 @@ class test_arithmetic(SimpleTestCase):
     
     def test_tambah_func(self):
         result = tambah(7,5)
-        assert result == 13
+        assert result == 12
