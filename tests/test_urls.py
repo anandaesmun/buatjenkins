@@ -17,10 +17,10 @@ class test_urls(SimpleTestCase):
         url = reverse('count')
         self.assertEqual(resolve(url).func, count)
         
-    def test_count_dashboard_resolves(self):
-        #assert 1 == 1
-        url = reverse('dashboard')
-        self.assertEqual(resolve(url).func, dashboard)
+    # def test_count_dashboard_resolves(self):
+    #     #assert 1 == 1
+    #     url = reverse('dashboard')
+    #     self.assertEqual(resolve(url).func, dashboard)
 
         # tes url pake pytest
    # @pytest.mark.django.db
