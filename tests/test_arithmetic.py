@@ -6,5 +6,5 @@ from pages.views import home, count, tambah
 class test_arithmetic(SimpleTestCase):
     
     def test_tambah_func(self):
-        result = tambah(7,5)
+        result = tambah(7,5) # 12
         assert result == 12
