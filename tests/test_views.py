@@ -13,5 +13,5 @@ class test_views(TestCase):
     def test_count_GET(self):
         client = Client()
         response = client.get(reverse('count'))
-        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.status_code, 415)
         self.assertTemplateUsed(response, 'count.html')
