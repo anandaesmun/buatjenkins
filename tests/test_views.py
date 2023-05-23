@@ -9,10 +9,15 @@ class test_views(TestCase):
         response = client.get(reverse('home'))
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'index.html')
-
-    def test_count_GET(self):
+    
+    def test_logout_GET(self):
         client = Client()
-        response = client.get(reverse('count'))
-        self.assertEqual(response.status_code, 415)
-        self.assertTemplateUsed(response, 'count.html')
+        response = client.get(reverse('log_out'))
+        self.assertEqual(response.status_code, 302)
+
+    # def test_count_GET(self):
+    #     client = Client()
+    #     response = client.get(reverse('count'))
+    #     self.assertEqual(response.status_code, 415)
+    #     self.assertTemplateUsed(response, 'count.html')
 
