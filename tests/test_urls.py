@@ -22,10 +22,4 @@ class test_urls(SimpleTestCase):
     #     url = reverse('dashboard')
     #     self.assertEqual(resolve(url).func, dashboard)
 
-        # tes url pake pytest
-   # @pytest.mark.django.db
-   # def test_home_url_pake_pytest(client):
-    #    url = reverse('home')
-     #   response = client.get(url)
-      #  assert response.status_code == 200
-    
+
