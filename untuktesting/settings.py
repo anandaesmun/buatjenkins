@@ -29,7 +29,7 @@ DEBUG = os.getenv('DEBUG')
 
 ALLOWED_HOSTS = ['*']
 
-CSRF_TRUSTED_ORIGINS = ['http://0.0.0.0']
+CSRF_TRUSTED_ORIGINS = ['http://0.0.0.0', 'http://10.12.32.46']
 
 
 # Application definition
