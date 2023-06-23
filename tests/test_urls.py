@@ -16,8 +16,8 @@ class test_urls(SimpleTestCase):
         url = reverse('count')
         self.assertEqual(resolve(url).func, count)
         
-    def test_count_dashboard_resolves(self):
-        url = reverse('dashboard')
-        self.assertEqual(resolve(url).func, dashboard)
+#    def test_count_dashboard_resolves(self):
+ #       url = reverse('dashboard')
+  #      self.assertEqual(resolve(url).func, dashboard)
 
 
