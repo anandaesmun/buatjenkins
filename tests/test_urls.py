@@ -4,22 +4,20 @@ from pages.views import home, count
 import pytest
 
 
-# class test_urls(SimpleTestCase):
+class test_urls(SimpleTestCase):
     
-#     #tes url
-#     def test_home_urls_resolves(self):
-#         #assert 1 == 1
-#         url = reverse('home')
-#         self.assertEqual(resolve(url).func, home)
+#tes url
+    def test_home_urls_resolves(self):
+        url = reverse('home')
+        self.assertEqual(resolve(url).func, home)
 
-#     def test_count_urls_resolves(self):
+    def test_count_urls_resolves(self):
 #         #assert 1 == 1
-#         url = reverse('count')
-#         self.assertEqual(resolve(url).func, count)
+        url = reverse('count')
+        self.assertEqual(resolve(url).func, count)
         
-#     def test_count_dashboard_resolves(self):
-#     #     #assert 1 == 1
-#         url = reverse('dashboard')
-#         self.assertEqual(resolve(url).func, dashboard)
+    def test_count_dashboard_resolves(self):
+        url = reverse('dashboard')
+        self.assertEqual(resolve(url).func, dashboard)
 
 
