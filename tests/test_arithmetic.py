@@ -3,8 +3,8 @@ from django.urls import reverse, resolve
 from pages.views import home, count, tambah
 
 
-# class test_arithmetic(SimpleTestCase):
+class test_arithmetic(SimpleTestCase):
     
-#     def test_tambah_func(self):
-#         result = tambah(7,5) # 12
-#         assert result == 12
+    def test_tambah_func(self):
+        result = tambah(7,5) # 12
+        assert result == 12
